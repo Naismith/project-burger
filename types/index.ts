@@ -5,6 +5,16 @@ export type MenuItem = {
   price: number;
 };
 
-export type Menu = {
+export type MenuSection = {
+  name: string;
   items: MenuItem[];
+};
+
+export type Menu = {
+  sections: MenuSection[];
+};
+
+export type MenuBoard = {
+  name: string;
+  boards: Menu[];
 };
